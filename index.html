@@ -256,6 +256,8 @@ button1.onclick = function() {
   rect.style.border = '10px -webkit-linear-gradient((to right, #000000,#F312CF, #00B2FF,#000000)';
 };
 
+
+
 button2.onclick = function() {
   rect.style.borderBottom = '5px solid #00ff00';
   button2.style.boxShadow = '0 0 10px #00ff00';
@@ -482,8 +484,8 @@ var textarea4 = document.createElement('textarea');
 textarea4.style.width = '45%';
 textarea4.style.height = '30%'
 textarea4.style.position = 'absolute';
-textarea4.style.top = '23%';
-textarea4.style.left = '20%';
+textarea4.style.top = '13%';
+textarea4.style.left = '2%';
 textarea4.style.border = '1px solid #ffffff';
 textarea4.style.backgroundColor = '#000000';
 view2.appendChild(textarea4);
@@ -514,6 +516,51 @@ buttonExplain.style.opacity = '1';
 buttonExplain.style.filter = 'blur(0px)';
 view2.appendChild(buttonExplain);
 
+buttonExplain.addEventListener('mouseover', function(){
+	buttonExplain.style.color = '#00B2FF';
+});
+buttonExplain.addEventListener('mouseout', function(){
+	buttonExplain.style.color = '#000000';
+});
+
+// A button to copy the text to clipboard
+var buttonCopyClipboard = document.createElement('button');
+buttonCopyClipboard.innerHTML = 'Copy';
+buttonCopyClipboard.style.width = '5%';
+buttonCopyClipboard.style.height = '7%';
+buttonCopyClipboard.style.position = 'absolute';
+buttonCopyClipboard.style.top = '3%';
+buttonCopyClipboard.style.left = '90%';
+buttonCopyClipboard.style.backgroundColor = '#ffffff';
+buttonCopyClipboard.style.color = '#000000';
+buttonCopyClipboard.style.fontFamily = 'Arial';
+buttonCopyClipboard.style.fontSize = '15px';
+buttonCopyClipboard.style.fontWeight = 'bold';
+buttonCopyClipboard.style.textAlign = 'center';
+buttonCopyClipboard.style.borderRadius = '5%';
+buttonCopyClipboard.style.boxShadow = '0 0 20px #000000';
+buttonCopyClipboard.style.border = '1px solid #ffffff';
+buttonCopyClipboard.style.margin = '0px';
+buttonCopyClipboard.style.padding = '5px';
+buttonCopyClipboard.style.cursor = 'pointer';
+buttonCopyClipboard.style.outline = 'none';
+buttonCopyClipboard.style.zIndex = '2';
+buttonCopyClipboard.style.opacity = '1';
+buttonCopyClipboard.style.filter = 'blur(0px)';
+view2.appendChild(buttonCopyClipboard);
+
+//when the button is clicked copy textarea text to clipboard
+buttonCopyClipboard.addEventListener('click', function(){
+	textarea2.select();
+  document.execCommand('copy');
+});
+
+buttonCopyClipboard.addEventListener('mouseover', function(){
+	buttonCopyClipboard.style.color = '#F312CF';
+});
+buttonCopyClipboard.addEventListener('mouseout', function(){
+	buttonCopyClipboard.style.color = '#000000';
+});
 
 
 
@@ -525,7 +572,7 @@ textarea4.style.border = '1px solid #ffffff';
 textarea4.style.borderRadius = '3%';
 textarea4.style.resize = 'none';
 textarea4.style.display = 'none';
-textarea4.style.border = '1px solid #00ff00';
+textarea4.style.border = '1px solid #00B2FF';
 
 button.onclick = function() {
   if (textarea4.style.display == 'none') {
@@ -655,6 +702,13 @@ buttonc.style.opacity = '1';
 buttonc.style.filter = 'blur(0px)';
 view3.appendChild(buttonc);
 
+
+buttonc.addEventListener('mouseover', function(){
+	buttonc.style.color = '#00B2FF';
+});
+buttonc.addEventListener('mouseout', function(){
+	buttonc.style.color = '#000000';
+});
 
 /* make a drop down menu showing different programming languages in it */
 var dropdown21 = document.createElement('select');
@@ -803,6 +857,13 @@ buttonflip.style.opacity = '1';
 buttonflip.style.filter = 'blur(0px)';
 view1.appendChild(buttonflip);
 
+buttonflip.addEventListener('mouseover', function(){
+	buttonflip.style.color = '#00B2FF';
+});
+buttonflip.addEventListener('mouseout', function(){
+	buttonflip.style.color = '#000000';
+});
+
 /* make a textarea */
 var textareasql1 = document.createElement('textarea');
 textareasql1.style.width = '46%';
@@ -899,6 +960,14 @@ buttonsql.style.zIndex = '2';
 buttonsql.style.opacity = '1';
 buttonsql.style.filter = 'blur(0px)';
 view4.appendChild(buttonsql);
+
+
+buttonsql.addEventListener('mouseover', function(){
+	buttonsql.style.color = '#00B2FF';
+});
+buttonsql.addEventListener('mouseout', function(){
+	buttonsql.style.color = '#000000';
+});
 
 
 /* make a drop down menu showing different programming languages in it */
@@ -1024,12 +1093,67 @@ buttonfix.style.opacity = '1';
 buttonfix.style.filter = 'blur(0px)';
 view5.appendChild(buttonfix);
 
+
 buttonfix.onmouseover = function() {
-    buttonfix.style.filter = 'blur(0px)';
-    buttonfix.style.opacity = '1';
-    buttonfix.style.boxShadow = '0 0 50px #00ff00';
     buttonfix.style.cursor = 'pointer';
+    buttonfix.style.color = '#00B2FF';
 }
+buttonfix.addEventListener('mouseout', function(){
+	buttonfix.style.color = '#000000';
+});
+
+var line1 = document.createElement('div');
+line1.style.height = '5%';
+line1.style.position = 'absolute';
+line1.style.width = '100%';
+line1.style.left = '0%';
+line1.style.top = '99%';
+line1.style.background = 'linear-gradient(to right, #000000,#F312CF, #00B2FF,#000000)';
+line1.style.display = 'none';
+button1.appendChild(line1);
+
+var line2 = document.createElement('div');
+line2.style.height = '5%';
+line2.style.position = 'absolute';
+line2.style.width = '100%';
+line2.style.left = '0%';
+line2.style.top = '99%';
+line2.style.background = 'linear-gradient(to right, #000000,#F312CF, #00B2FF,#000000)';
+line2.style.display = 'none';
+button2.appendChild(line2);
+
+var line3 = document.createElement('div');
+line3.style.height = '5%';
+line3.style.position = 'absolute';
+line3.style.width = '100%';
+line3.style.left = '0%';
+line3.style.top = '99%';
+line3.style.background = 'linear-gradient(to right, #000000,#F312CF, #00B2FF,#000000)';
+line3.style.display = 'none';
+button3.appendChild(line3);
+
+var line4 = document.createElement('div');
+line4.style.height = '5%';
+line4.style.position = 'absolute';
+line4.style.width = '100%';
+line4.style.left = '0%';
+line4.style.top = '99%';
+line4.style.background = 'linear-gradient(to right, #000000,#F312CF, #00B2FF,#000000)';
+line4.style.display = 'none';
+button4.appendChild(line4);
+
+var line5 = document.createElement('div');
+line5.style.height = '5%';
+line5.style.position = 'absolute';
+line5.style.width = '100%';
+line5.style.left = '0%';
+line5.style.top = '99%';
+line5.style.background = 'linear-gradient(to right, #000000,#F312CF, #00B2FF,#000000)';
+line5.style.display = 'none';
+button5.appendChild(line5);
+
+
+
 
 //when mouse leaves remove the effects
 button1.onclick = function() {
@@ -1040,13 +1164,24 @@ button1.onclick = function() {
   view4.style.display = 'none';
   view5.style.display = 'none';
   text.innerHTML = 'Codeflipper';
-  button1.style.borderBottom = '3px solid #00B2FF';
+  //button1.style.borderBottom = '3px solid #00B2FF';
   button2.style.borderBottom = '3px solid #000000';
   button3.style.borderBottom = '3px solid #000000';
   button4.style.borderBottom = '3px solid #000000';
   button5.style.borderBottom = '3px solid #000000';
 
-  
+  button1.style.color = '#00B2FF';
+  button2.style.color = 'grey';
+  button3.style.color = 'grey';
+  button4.style.color = 'grey';
+  button5.style.color = 'grey';
+
+  line1.style.display = 'block';
+  line2.style.display = 'none';
+  line3.style.display = 'none';
+  line4.style.display = 'none';
+  line5.style.display = 'none';
+
   subheading.innerHTML = 'Flip your code to get the same result in different languages.';
   
 };
@@ -1057,11 +1192,24 @@ button2.onclick = function() {
   view4.style.display = 'none';
   view5.style.display = 'none';
   text.innerHTML = 'Codroid';
-  button2.style.borderBottom = '3px solid #00B2FF';
+  //button2.style.borderBottom = '3px solid #00B2FF';
   button3.style.borderBottom = '3px solid #000000';
   button4.style.borderBottom = '3px solid #000000';
   button1.style.borderBottom = '3px solid #000000';
   button5.style.borderBottom = '3px solid #000000';
+
+  button2.style.color = '#00B2FF';
+  button1.style.color = 'grey';
+  button3.style.color = 'grey';
+  button4.style.color = 'grey';
+  button5.style.color = 'grey';
+
+  line2.style.display = 'block';
+  line3.style.display = 'none';
+  line4.style.display = 'none';
+  line5.style.display = 'none';
+  line1.style.display = 'none';
+
   subheading.innerHTML = 'Get your code explained by our AI.';
 };
 button3.onclick = function() {
@@ -1070,11 +1218,24 @@ button3.onclick = function() {
   view3.style.display = 'block';
   view4.style.display = 'none';
   view5.style.display = 'none';text.innerHTML = 'Opticode';
-  button3.style.borderBottom = '3px solid #00B2FF';
+  //button3.style.borderBottom = '3px solid #00B2FF';
   button4.style.borderBottom = '3px solid #000000';
   button2.style.borderBottom = '3px solid #000000';
   button1.style.borderBottom = '3px solid #000000';
   button5.style.borderBottom = '3px solid #000000';
+
+  button3.style.color = '#00B2FF';
+  button1.style.color = 'grey';
+  button2.style.color = 'grey';
+  button4.style.color = 'grey';
+  button5.style.color = 'grey';
+
+  line3.style.display = 'block';
+  line4.style.display = 'none';
+  line5.style.display = 'none';
+  line1.style.display = 'none';
+  line2.style.display = 'none';
+
   subheading.innerHTML = 'Check the time complexity of your code.';
 };
 button4.onclick = function() {
@@ -1083,11 +1244,24 @@ button4.onclick = function() {
   view3.style.display = 'none';
   view4.style.display = 'block';
   view5.style.display = 'none';text.innerHTML = 'SQLizer';
-  button4.style.borderBottom = '3px solid #00B2FF';
+  //button4.style.borderBottom = '3px solid #00B2FF';
   button3.style.borderBottom = '3px solid #000000';
   button2.style.borderBottom = '3px solid #000000';
   button1.style.borderBottom = '3px solid #000000';
   button5.style.borderBottom = '3px solid #000000';
+
+  button4.style.color = '#00B2FF';
+  button1.style.color = 'grey';
+  button2.style.color = 'grey';
+  button3.style.color = 'grey';
+  button5.style.color = 'grey';
+
+  line4.style.display = 'block';
+  line5.style.display = 'none';
+  line1.style.display = 'none';
+  line2.style.display = 'none';
+  line3.style.display = 'none';
+
   subheading.innerHTML = 'Generate SQL queries for your database.';
 };
 button5.onclick = function() {
@@ -1096,11 +1270,24 @@ button5.onclick = function() {
   view3.style.display = 'none';
   view4.style.display = 'none';
   view5.style.display = 'block';text.innerHTML = 'Bugfix';
-  button5.style.borderBottom = '3px solid #00B2FF';
+  //button5.style.borderBottom = '3px solid #00B2FF';
   button4.style.borderBottom = '3px solid #000000';
   button3.style.borderBottom = '3px solid #000000';
   button2.style.borderBottom = '3px solid #000000';
-  button1.style .borderBottom= '3px solid #000000' ;
+  button1.style .borderBottom= '3px solid #000000';
+
+  button5.style.color = '#00B2FF';
+  button1.style.color = 'grey';
+  button2.style.color = 'grey';
+  button3.style.color = 'grey';
+  button4.style.color = 'grey';
+
+  line5.style.display = 'block';
+  line1.style.display = 'none';
+  line2.style.display = 'none';
+  line3.style.display = 'none';
+  line4.style.display = 'none';
+
   subheading.innerHTML = 'Fix bugs in your code by our intelligent AI.';
 
    };
@@ -1123,7 +1310,7 @@ view5.appendChild(textfix);
 
 //when the mouse hovers over above buttons, make the fonts of button glow
 products.addEventListener('mouseover', function(){
-	products.style.color = '#00B2FF';
+	products.style.color = '#F312CF';
 	products.style.fontSize = '17px';
 });
 products.addEventListener('mouseout', function(){
@@ -1131,7 +1318,7 @@ products.addEventListener('mouseout', function(){
 	products.style.fontSize = '15px';
 });
 blogs.addEventListener('mouseover', function(){
-	blogs.style.color = '#00B2FF';
+	blogs.style.color = '#F312CF';
 	blogs.style.fontSize = '17px';
 });
 blogs.addEventListener('mouseout', function(){
@@ -1139,7 +1326,7 @@ blogs.addEventListener('mouseout', function(){
 	blogs.style.fontSize = '15px';
 });
 manual.addEventListener('mouseover', function(){
-	manual.style.color = '#00B2FF';
+	manual.style.color = '#F312CF';
 	manual.style.fontSize = '17px';
 });
 manual.addEventListener('mouseout', function(){
@@ -1157,6 +1344,13 @@ logout.addEventListener('mouseout', function(){
 
 });
 
+
+button1.addEventListener('mouseover', function(){
+	button1.style.color = '#00B2FF';
+});
+button1.addEventListener('mouseout', function(){
+	button1.style.color = '#000000';
+});
 
 
 
