@@ -1,10 +1,10 @@
 
 <html>
-    <head>
-        <script>
-        document.addEventListener("DOMContentLoaded", function() {
+  <head>
+      <script>
+      document.addEventListener("DOMContentLoaded", function() {
 
-            var background = document.createElement('div');
+          var background = document.createElement('div');
 //background.style.backgroundImage = 'url(https://images.unsplash.com/photo-1585314062604-1a357de8b000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80)';
 background.style.backgroundSize = 'cover';
 background.style.width = '100%';
@@ -41,16 +41,16 @@ document.body.appendChild(textmain);
 
 //when mouse hovers add some effects like shadown in the downward direction
 textmain.onmouseover = function() {
-    textmain.style.filter = 'blur(1px)';
-    textmain.style.opacity = '0.8';
-    textmain.style.cursor = 'pointer';
+  textmain.style.filter = 'blur(1px)';
+  textmain.style.opacity = '0.8';
+  textmain.style.cursor = 'pointer';
 }
 
 //when mouse leaves remove the effects
 textmain.onmouseout = function() {
-    textmain.style.filter = 'blur(0px)';
-    textmain.style.opacity = '1';
-    textmain.style.cursor = 'pointer';
+  textmain.style.filter = 'blur(0px)';
+  textmain.style.opacity = '1';
+  textmain.style.cursor = 'pointer';
 }
 
 //make text more round
@@ -119,17 +119,17 @@ manual.style.borderColor = "#000000";
 navbar.appendChild(manual);
 
 var logout = document.createElement('button');
-logout.innerHTML = 'Logout';
+logout.innerHTML = 'Sign up';
 logout.style.float = 'right';
-logout.style.left = '90%';
-logout.style.top = '2%';
+logout.style.left = '92%';
+logout.style.top = '5%';
 logout.style.position = 'absolute';
-logout.style.width = '10%';
-logout.style.height = '100%';
+logout.style.width = '8%';
+logout.style.height = '90%';
 logout.style.textAlign = 'center';
-logout.style.backgroundColor = '#000000';
-logout.style.borderColor = "#000000";
-logout.style.color = '#ffffff';
+logout.style.backgroundColor = '#ffffff';
+logout.style.borderColor = "10px #000000";
+logout.style.color = '#000000';
 logout.style.fontSize = '15px';
 logout.style.borderRadius = '10px';
 navbar.appendChild(logout);
@@ -159,44 +159,44 @@ img.style.top = '0%';
 
 //when the mouse hovers over above buttons, make the fonts of button glow
 products.addEventListener('mouseover', function(){
-	products.style.color = '#F312CF';
-	products.style.fontSize = '17px';
+products.style.color = '#F312CF';
+products.style.fontSize = '17px';
 });
 products.addEventListener('mouseout', function(){
-	products.style.color = '#ffffff';
-	products.style.fontSize = '15px';
+products.style.color = '#ffffff';
+products.style.fontSize = '15px';
 });
 blogs.addEventListener('mouseover', function(){
-	blogs.style.color = '#F312CF';
-	blogs.style.fontSize = '17px';
+blogs.style.color = '#F312CF';
+blogs.style.fontSize = '17px';
 });
 blogs.addEventListener('mouseout', function(){
-	blogs.style.color = '#ffffff';
-	blogs.style.fontSize = '15px';
+blogs.style.color = '#ffffff';
+blogs.style.fontSize = '15px';
 });
 manual.addEventListener('mouseover', function(){
-	manual.style.color = '#F312CF';
-	manual.style.fontSize = '17px';
+manual.style.color = '#F312CF';
+manual.style.fontSize = '17px';
 });
 manual.addEventListener('mouseout', function(){
-	manual.style.color = '#ffffff';
-	manual.style.fontSize = '15px';
+manual.style.color = '#ffffff';
+manual.style.fontSize = '15px';
 });
 logout.addEventListener('mouseover', function(){
-	logout.style.color = 'red';
-	logout.style.fontSize = '17px';
+logout.style.color = 'red';
+logout.style.fontSize = '17px';
 });
 logout.addEventListener('mouseout', function(){
-	logout.style.color = '#ffffff';
-	logout.style.fontSize = '15px';
+logout.style.color = '#000000';
+logout.style.fontSize = '15px';
 });
 
 
 products.addEventListener('click', function() {
-    window.open('codilarity_Main.html', '_self');
+  window.open('codilarity_Main.html', '_self');
 });
 manual.addEventListener('click', function() {
-    window.open('codilarity_Manual.html', '_self');
+  window.open('codilarity_Manual.html', '_self');
 });
 
 
@@ -276,17 +276,17 @@ GetStartedButton.style.filter = 'blur(0px)';
 document.body.appendChild(GetStartedButton);
 
 GetStartedButton.addEventListener('mouseover', function () {
-	GetStartedButton.style.left = '40%';
-	GetStartedButton.style.width = '20%';
+GetStartedButton.style.left = '40%';
+GetStartedButton.style.width = '20%';
 });
 // when mouse moves out of the button fontsize changes to 15 and outline is removed
 GetStartedButton.addEventListener('mouseout', function () {
-	GetStartedButton.style.left = '35%';
-	GetStartedButton.style.width = '30%';
+GetStartedButton.style.left = '35%';
+GetStartedButton.style.width = '30%';
 });
 
 GetStartedButton.addEventListener('click', function() {
-    window.open('codilarity_SignIn', '_self');
+  window.open('codilarity_SignIn.html', '_self');
 });
 
 // make a wide grey rectangle just below Manual
@@ -465,75 +465,75 @@ frame2.appendChild(frame6inframe2);
 
 //add effects when the mouse hovers over frames
 frame1inframe2.onmouseover = function() {
-    frame1inframe2.style.boxShadow = '0px 0px 20px grey';
-    frame1inframe2.style.transform = 'scale(1.05)';
+  frame1inframe2.style.boxShadow = '0px 0px 20px grey';
+  frame1inframe2.style.transform = 'scale(1.05)';
 }
 
 
 frame2inframe2.onmouseover = function() {
-    frame2inframe2.style.boxShadow = '0px 0px 20px grey';
-    frame2inframe2.style.transform = 'scale(1.05)';
+  frame2inframe2.style.boxShadow = '0px 0px 20px grey';
+  frame2inframe2.style.transform = 'scale(1.05)';
 }
 
 
 frame3inframe2.onmouseover = function() {
-    frame3inframe2.style.boxShadow = '0px 0px 20px grey';
-    frame3inframe2.style.transform = 'scale(1.05)';
+  frame3inframe2.style.boxShadow = '0px 0px 20px grey';
+  frame3inframe2.style.transform = 'scale(1.05)';
 }
 
 
 frame4inframe2.onmouseover = function() {
-    frame4inframe2.style.boxShadow = '0px 0px 20px grey';
-    frame4inframe2.style.transform = 'scale(1.05)';
+  frame4inframe2.style.boxShadow = '0px 0px 20px grey';
+  frame4inframe2.style.transform = 'scale(1.05)';
 }
 
 
 frame5inframe2.onmouseover = function() {
-    frame5inframe2.style.boxShadow = '0px 0px 20px grey';
-    frame5inframe2.style.transform = 'scale(1.05)';
+  frame5inframe2.style.boxShadow = '0px 0px 20px grey';
+  frame5inframe2.style.transform = 'scale(1.05)';
 }
 
 
 frame6inframe2.onmouseover = function() {
-    frame6inframe2.style.boxShadow = '0px 0px 20px grey';
-    frame6inframe2.style.transform = 'scale(1.05)';
+  frame6inframe2.style.boxShadow = '0px 0px 20px grey';
+  frame6inframe2.style.transform = 'scale(1.05)';
 }
 
 
 //remove effects when the mouse leaves the frames
 frame1inframe2.onmouseout = function() {
-    frame1inframe2.style.boxShadow = '';
-    frame1inframe2.style.transform = '';
+  frame1inframe2.style.boxShadow = '';
+  frame1inframe2.style.transform = '';
 }
 
 
 frame2inframe2.onmouseout = function() {
-    frame2inframe2.style.boxShadow = '';
-    frame2inframe2.style.transform = '';
+  frame2inframe2.style.boxShadow = '';
+  frame2inframe2.style.transform = '';
 }
 
 
 frame3inframe2.onmouseout = function() {
-    frame3inframe2.style.boxShadow = '';
-    frame3inframe2.style.transform = '';
+  frame3inframe2.style.boxShadow = '';
+  frame3inframe2.style.transform = '';
 }
 
 
 frame4inframe2.onmouseout = function() {
-    frame4inframe2.style.boxShadow = '';
-    frame4inframe2.style.transform = '';
+  frame4inframe2.style.boxShadow = '';
+  frame4inframe2.style.transform = '';
 }
 
 
 frame5inframe2.onmouseout = function() {
-    frame5inframe2.style.boxShadow = '';
-    frame5inframe2.style.transform = '';
+  frame5inframe2.style.boxShadow = '';
+  frame5inframe2.style.transform = '';
 }
 
 
 frame6inframe2.onmouseout = function() {
-    frame6inframe2.style.boxShadow = '';
-    frame6inframe2.style.transform = '';
+  frame6inframe2.style.boxShadow = '';
+  frame6inframe2.style.transform = '';
 }
 
 // Make headings and descriptions for all frames
@@ -729,18 +729,18 @@ button.innerHTML = 'Sign up now';
 frame3.appendChild(button);
 
 button.addEventListener('mouseover', function(){
-	button.style.color = '#F312CF';
+button.style.color = '#F312CF';
 });
 button.addEventListener('mouseout', function(){
-	button.style.color = '#000000';
+button.style.color = '#000000';
 });
 
 button.addEventListener('click', function() {
-    window.open('codilarity_SignIn', '_self');
+  window.open('codilarity_SignIn.html', '_self');
 });
 
 
 });
-        </script>
-    </head>
+      </script>
+  </head>
 </html>
