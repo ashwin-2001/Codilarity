@@ -5,11 +5,12 @@
         document.addEventListener("DOMContentLoaded", function() {
 
 var background = document.createElement('div');
-background.style.backgroundImage = 'url(https://images.unsplash.com/photo-1585314062604-1a357de8b000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80)';
+//background.style.backgroundImage = 'url(https://images.unsplash.com/photo-1585314062604-1a357de8b000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80)';
 background.style.backgroundSize = 'cover';
 background.style.width = '100%';
-background.style.height = '130%';
+background.style.height = '135%';
 background.style.position = 'absolute';
+background.style.background = '#1E1E1E';
 background.style.top = '0';
 background.style.left = '0';
 document.body.appendChild(background);
@@ -56,6 +57,9 @@ textmain.onmouseout = function() {
 textmain.style.borderRadius = '5%';
 
 
+
+
+
 var rect = document.createElement('div');
 rect.style.borderRadius = '2%';
 rect.style.width = '89%';
@@ -65,6 +69,7 @@ rect.style.position = 'absolute';
 rect.style.top = '15%';
 rect.style.opacity = '1.0';
 rect.style.left = '5%';
+rect.style.boxShadow = '10 0 50px #000000';
 document.body.appendChild(rect);
 
 /* make a black navbar header at the screen top */
@@ -153,9 +158,80 @@ line.style.top = '99%';
 line.style.background = 'linear-gradient(to right, #F312CF, #00B2FF)';
 navbar.appendChild(line);
 
+// Codilarity Logo
+
+var img = document.createElement('img');
+img.style.position = 'absolute';
+img.src = 'https://github.com/ashwin-2001/Codilarity/blob/main/C%20square%20logo.png?raw=true';
+navbar.appendChild(img);
+
+/* make it small */
+img.style.width = '48px';
+img.style.height = '90%';
+img.style.left = '2%';
+img.style.top = '0%';
 
 
-rect.style.boxShadow = '0 0 20px #ffffff';
+var img1 = document.createElement('img');
+img1.style.position = 'absolute';
+img1.src = 'https://github.com/ashwin-2001/Codilarity/blob/main/Dark%20Blue%20Club%20Logo.jpg?raw=true';
+document.body.appendChild(img1);
+/* make it small */
+img1.style.width = '4%';
+img1.style.height = '7%';
+img1.style.left = '47%';
+img1.style.borderRadius = '10%';
+img1.style.top = '102%';
+img1.style.cursor = 'pointer';
+img1.addEventListener('click', function() {
+  window.location.href = 'https://nextapai.com/';
+});
+
+
+products.addEventListener('click', function() {
+    window.open('index.html', '_self');
+});
+manual.addEventListener('click', function() {
+    window.open('codilarity_manual.html', '_self');
+});
+
+/* make a button "Calculate" */
+var buttonManual = document.createElement('button');
+buttonManual.innerHTML = 'Lets Go!';
+buttonManual.style.width = '10%';
+buttonManual.style.height = '7%';
+buttonManual.style.position = 'absolute';
+buttonManual.style.top = '122%';
+buttonManual.style.left = '44%';
+buttonManual.style.backgroundColor = '#ffffff';
+buttonManual.style.color = '#000000';
+buttonManual.style.fontFamily = 'Arial';
+buttonManual.style.fontSize = '15px';
+buttonManual.style.fontWeight = 'bold';
+buttonManual.style.textAlign = 'center';
+buttonManual.style.borderRadius = '5%';
+buttonManual.style.boxShadow = '0 0 20px #000000';
+buttonManual.style.border = '1px solid #ffffff';
+buttonManual.style.margin = '0px';
+buttonManual.style.padding = '5px';
+buttonManual.style.cursor = 'pointer';
+buttonManual.style.outline = 'none';
+buttonManual.style.zIndex = '2';
+buttonManual.style.opacity = '1';
+buttonManual.style.filter = 'blur(0px)';
+document.body.appendChild(buttonManual);
+
+buttonManual.addEventListener('mouseover', function(){
+	buttonManual.style.color = '#00B2FF';
+});
+buttonManual.addEventListener('mouseout', function(){
+	buttonManual.style.color = '#000000';
+});
+
+
+
+
+rect.style.boxShadow = '0 0 50px #ffffff';
 
 var header = document.createElement('div');
 header.style.width = '89%';
@@ -295,18 +371,18 @@ button5.onclick = function() {
 };
 
 var text = document.createElement('div');
-text.style.width = '13%';
+text.style.width = '50%';
 text.style.height = '10%';
 text.style.position = 'absolute';
-text.style.top = '106%';
-text.style.left = '3%';
+text.style.top = '109%';
+text.style.left = '25%';
 text.style.textAlign = 'center';
-text.style.color = '#ffffff';
-text.innerHTML = 'Hello World';
+//text.style.color = '#00B2FF';
+text.innerHTML = 'Powered by Nextap';
+text.style.color = '#ffffff'
 document.body.appendChild(text);
 
 background.style.filter = 'blur(5px)';
-
 
 
 button1.onclick();
@@ -317,14 +393,14 @@ text.style.fontFamily = 'Arial Black';
 text.style.fontSize = '45px';
 
 var subheading = document.createElement('div');
-subheading.style.width = '30%';
+subheading.style.width = '20%';
 subheading.style.height = '10%';
 subheading.style.position = 'absolute';
-subheading.style.top = '115%';
-subheading.style.left = '2%';
+subheading.style.top = '118%';
+subheading.style.left = '40%';
 subheading.style.textAlign = 'center';
 subheading.style.color = '#ffffff';
-subheading.innerHTML = 'Hello World';
+subheading.innerHTML = 'Check manual for detailed usage guide!';
 document.body.appendChild(subheading);
 
 subheading.style.fontFamily = 'Arial';
@@ -336,7 +412,7 @@ view1.style.height = '100%';
 view1.style.position = 'absolute';
 view1.style.backgroundColor = '#000000';
 view1.style.borderRadius = '5%';
-view1.style.boxShadow = '10 0 50px #000000';
+view1.style.boxShadow = '0 0 50px #000000';
 rect.appendChild(view1);
 var view2 = document.createElement('div');
 view2.style.width = '100%';
@@ -397,8 +473,6 @@ textarea2.style.backgroundColor = '#000000';
 textarea2.style.color = '#ffffff';
 view2.appendChild(textarea2);
 
-textarea.style.resize = 'none';
-textarea2.style.resize = 'none';
 
 /* make a button with white borders "Ask" */
 var button = document.createElement('button');
@@ -610,6 +684,7 @@ view3.appendChild(dropdown);
 
 /* make a textarea */
 var textarea = document.createElement('textarea');
+textarea.style.innerHTML = "\t\t\tEnter your code here";
 textarea.style.width = '46%';
 textarea.style.height = '80%';
 textarea.style.position = 'absolute';
@@ -629,13 +704,14 @@ textarea.style.padding = '5px';
 textarea.style.paddingTop = '35px'
 textarea.style.cursor = 'pointer';
 textarea.style.outline = 'none';
-textarea.style.zIndex = '1';
+textarea.style.zIndex = '2';
 textarea.style.opacity = '1';
 textarea.style.filter = 'blur(0px)';
 view3.appendChild(textarea);
 
 /* clone it to right with heading "Opticode" */
 var textarea2 = textarea.cloneNode(true);
+textarea2.style.innerHTML = "\t\t\tGet a detailed explanation of the code in left section";
 textarea2.style.width = '47%';
 textarea2.style.height = '80%';
 textarea2.style.position = 'absolute';
@@ -654,10 +730,35 @@ textarea2.style.margin = '0px';
 textarea2.style.padding = '5px';
 textarea2.style.cursor = 'pointer';
 textarea2.style.outline = 'none';
-textarea2.style.zIndex = '1';
+textarea2.style.zIndex = '2';
 textarea2.style.opacity = '1';
 textarea2.style.filter = 'blur(0px)';
 view3.appendChild(textarea2);
+
+
+textarea.addEventListener('focus', function(){
+	if(textarea.value == '\t\t\tEnter your code here'){
+		textarea.value = '';
+	}
+});
+textarea.addEventListener('blur', function(){
+	if(textarea == ''){
+		textarea.value = '\t\t\tEnter your code here';
+	}
+});
+
+//when textarea2flipper2 is filled //Here will be your translated code... text will vanish and comeback if the textbox is empty
+textarea2.addEventListener('focus', function(){
+	if(textarea2.value == '\t\t\tGet a detailed explanation of the code in left section'){
+		textarea2.value = '';
+	}
+});
+textarea2.addEventListener('blur', function(){
+	if(textarea2.value == ''){
+		textarea2.value = '\t\t\tGet a detailed explanation of the code in left section';
+	}
+});
+
 
 /* set max width for both */
 textarea.style.maxWidth = '46%';
@@ -763,6 +864,7 @@ view1.appendChild(dropdown22);
 
 /* make a textarea */
 var textareaflipper1 = document.createElement('textarea');
+textareaflipper1.innerHTML = '\t\t\tSelect your target language and Enter your code here';
 textareaflipper1.style.width = '47%';
 textareaflipper1.style.height = '87%';
 textareaflipper1.style.position = 'absolute';
@@ -772,7 +874,7 @@ textareaflipper1.style.backgroundColor = '#000000';
 textareaflipper1.style.color = '#ffffff';
 textareaflipper1.style.fontFamily = 'Arial';
 textareaflipper1.style.fontSize = '15px';
-textareaflipper1.style.fontWeight = 'bold';
+textareaflipper1.style.fontWeight = 'normal';
 textareaflipper1.style.textAlign = 'left';
 textareaflipper1.style.borderRadius = '1%';
 textareaflipper1.style.boxShadow = '0 0 20px #000000';
@@ -789,6 +891,7 @@ view1.appendChild(textareaflipper1);
 
 /* clone it to right with heading "Opticode" */
 var textarea2flipper2 = textarea.cloneNode(true);
+textarea2flipper2.innerHTML = '\t\t\tSelect a target language and Here will be your translated code';
 textarea2flipper2.style.width = '47%';
 textarea2flipper2.style.height = '87%';
 textarea2flipper2.style.position = 'absolute';
@@ -798,7 +901,7 @@ textarea2flipper2.style.backgroundColor = '#000000';
 textarea2flipper2.style.color = '#ffffff';
 textarea2flipper2.style.fontFamily = 'Arial';
 textarea2flipper2.style.fontSize = '15px';
-textarea2flipper2.style.fontWeight = 'bold';
+textarea2flipper2.style.fontWeight = 'normal';
 textarea2flipper2.style.textAlign = 'left';
 textarea2flipper2.style.borderRadius = '1%';
 textarea2flipper2.style.boxShadow = '0 0 20px #000000';
@@ -812,6 +915,30 @@ textarea2flipper2.style.opacity = '1';
 textarea2flipper2.style.paddingTop = '7%'
 textarea2flipper2.style.filter = 'blur(0px)';
 view1.appendChild(textarea2flipper2);
+
+//when textareaflipper1 is filled //Here will be your translated code... text will vanish and comeback if the textbox is empty
+textareaflipper1.addEventListener('focus', function(){
+	if(textareaflipper1.value == '\t\t\tSelect your target language and Enter your code here'){
+		textareaflipper1.value = '';
+	}
+});
+textareaflipper1.addEventListener('blur', function(){
+	if(textareaflipper1.value == ''){
+		textareaflipper1.value = '\t\t\tSelect your target language and Enter your code here';
+	}
+});
+
+//when textarea2flipper2 is filled //Here will be your translated code... text will vanish and comeback if the textbox is empty
+textarea2flipper2.addEventListener('focus', function(){
+	if(textarea2flipper2.value == '\t\t\tSelect a target language and Here will be your translated code'){
+		textarea2flipper2.value = '';
+	}
+});
+textarea2flipper2.addEventListener('blur', function(){
+	if(textarea2flipper2.value == ''){
+		textarea2flipper2.value = '\t\t\tSelect a target language and Here will be your translated code';
+	}
+});
 
 
 var line = document.createElement('div');
@@ -864,8 +991,10 @@ buttonflip.addEventListener('mouseout', function(){
 	buttonflip.style.color = '#000000';
 });
 
+
 /* make a textarea */
 var textareasql1 = document.createElement('textarea');
+textareasql1.style.innerHTML = '\t\tType a table and than ask for queries in pure CLEAR defined english';
 textareasql1.style.width = '46%';
 textareasql1.style.height = '80%';
 textareasql1.style.position = 'absolute';
@@ -892,6 +1021,7 @@ view4.appendChild(textareasql1);
 
 /* clone it to right with heading "Opticode" */
 var textareasql2 = textarea.cloneNode(true);
+textareasql2.style.innerHTML = '\t\t\t\tGet well structured SQL queries';
 textareasql2.style.width = '47%';
 textareasql2.style.height = '80%';
 textareasql2.style.position = 'absolute';
@@ -918,12 +1048,34 @@ view4.appendChild(textareasql2);
 
 /* set max width for both */
 textareasql1.style.maxWidth = '46%';
-textareasql2.style.maxWidth = '47%';
+textareasql2.style.maxWidth = '46%';
 
 /* set max height */
 textareasql1.style.maxHeight = '80%';
 textareasql2.style.maxHeight = '80%';
 
+textareasql1.addEventListener('focus', function(){
+	if(textareasql1.value == '\t\tType a table and than ask for queries in pure CLEAR defined english'){
+		textareasql1.value = '';
+	}
+});
+textareasql1.addEventListener('blur', function(){
+	if(textareasql1.value == ''){
+		textareasql1.value = '\t\tType a table and than ask for queries in pure CLEAR defined english';
+	}
+});
+
+//when textarea2flipper2 is filled //Here will be your translated code... text will vanish and comeback if the textbox is empty
+textareasql2.addEventListener('focus', function(){
+	if(textareasql2.value == '\t\t\t\tGet well structured SQL queries'){
+		textareasql2.value = '';
+	}
+});
+textareasql2.addEventListener('blur', function(){
+	if(textareasql2.value == ''){
+		textareasql2.value = '\t\t\t\tGet well structured SQL queries';
+	}
+});
 
 var line = document.createElement('div');
 line.style.position = 'absolute';
@@ -1163,7 +1315,7 @@ button1.onclick = function() {
   view3.style.display = 'none';
   view4.style.display = 'none';
   view5.style.display = 'none';
-  text.innerHTML = 'Codeflipper';
+  //text.innerHTML = 'Codeflipper';
   //button1.style.borderBottom = '3px solid #00B2FF';
   button2.style.borderBottom = '3px solid #000000';
   button3.style.borderBottom = '3px solid #000000';
@@ -1182,7 +1334,7 @@ button1.onclick = function() {
   line4.style.display = 'none';
   line5.style.display = 'none';
 
-  subheading.innerHTML = 'Flip your code to get the same result in different languages.';
+  //subheading.innerHTML = 'Flip your code to get the same result in different languages.';
   
 };
 button2.onclick = function() {
@@ -1191,7 +1343,7 @@ button2.onclick = function() {
   view3.style.display = 'none';
   view4.style.display = 'none';
   view5.style.display = 'none';
-  text.innerHTML = 'Codroid';
+  //text.innerHTML = 'Codroid';
   //button2.style.borderBottom = '3px solid #00B2FF';
   button3.style.borderBottom = '3px solid #000000';
   button4.style.borderBottom = '3px solid #000000';
@@ -1210,14 +1362,14 @@ button2.onclick = function() {
   line5.style.display = 'none';
   line1.style.display = 'none';
 
-  subheading.innerHTML = 'Get your code explained by our AI.';
+  //subheading.innerHTML = 'Get your code explained by our AI.';
 };
 button3.onclick = function() {
   view1.style.display = 'none';
   view2.style.display = 'none';
   view3.style.display = 'block';
   view4.style.display = 'none';
-  view5.style.display = 'none';text.innerHTML = 'Opticode';
+  view5.style.display = 'none';//text.innerHTML = 'Opticode';
   //button3.style.borderBottom = '3px solid #00B2FF';
   button4.style.borderBottom = '3px solid #000000';
   button2.style.borderBottom = '3px solid #000000';
@@ -1236,14 +1388,14 @@ button3.onclick = function() {
   line1.style.display = 'none';
   line2.style.display = 'none';
 
-  subheading.innerHTML = 'Check the time complexity of your code.';
+  //subheading.innerHTML = 'Check the time complexity of your code.';
 };
 button4.onclick = function() {
   view1.style.display = 'none';
   view2.style.display = 'none';
   view3.style.display = 'none';
   view4.style.display = 'block';
-  view5.style.display = 'none';text.innerHTML = 'SQLizer';
+  view5.style.display = 'none';//text.innerHTML = 'SQLizer';
   //button4.style.borderBottom = '3px solid #00B2FF';
   button3.style.borderBottom = '3px solid #000000';
   button2.style.borderBottom = '3px solid #000000';
@@ -1262,14 +1414,14 @@ button4.onclick = function() {
   line2.style.display = 'none';
   line3.style.display = 'none';
 
-  subheading.innerHTML = 'Generate SQL queries for your database.';
+  //subheading.innerHTML = 'Generate SQL queries for your database.';
 };
 button5.onclick = function() {
   view1.style.display = 'none';
   view2.style.display = 'none';
   view3.style.display = 'none';
   view4.style.display = 'none';
-  view5.style.display = 'block';text.innerHTML = 'Bugfix';
+  view5.style.display = 'block';//text.innerHTML = 'Bugfix';
   //button5.style.borderBottom = '3px solid #00B2FF';
   button4.style.borderBottom = '3px solid #000000';
   button3.style.borderBottom = '3px solid #000000';
@@ -1288,7 +1440,7 @@ button5.onclick = function() {
   line3.style.display = 'none';
   line4.style.display = 'none';
 
-  subheading.innerHTML = 'Fix bugs in your code by our intelligent AI.';
+  //subheading.innerHTML = 'Fix bugs in your code by our intelligent AI.';
 
    };
 button1.click();
@@ -1351,6 +1503,10 @@ button1.addEventListener('mouseover', function(){
 button1.addEventListener('mouseout', function(){
 	button1.style.color = '#000000';
 });
+
+
+
+
 
 
 
